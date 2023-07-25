@@ -4,11 +4,12 @@ body {
     border-bottom: solid;
     border-left: solid;
     border-right: solid;
-    border-radius: 5px;
+    border-radius: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 20px;
 }
 
 h1 {
@@ -24,7 +25,7 @@ h1 {
 }
 
 p {
-    font-size: 24px;
+    font-family: 'Irish Grover', cursive;
     text-align: center;
     font-size: 18px;
     background-color: white;
@@ -34,5 +35,4 @@ p {
     border-right: solid;
     border-radius: 5px;
     padding: 10px;
-    
 }
