@@ -44,19 +44,12 @@ hr {
     border-color: black;
 }
 
-/* 
-how to make it not black
-how to put numbers
-how to get the numbers back
-how to make range not overflow
-*/
-
 input[type="range"] {
-    width: 1310px;
+    width: 100%;
     accent-color: rgb(238, 183, 183);
 }
 
-input[type="submit"] {
+button {
     font-family: 'Irish Grover', cursive;
     font-size: 25px;
     width: 150px;

@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="individualist.html">
+    <link href="peacemaker.html">
+    <link href="reformer.html">
+
     
 </head>
 <body>
@@ -14,97 +18,97 @@
     <section id="questions">
         <h2>People describe you as outgoing and friendly.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides1" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You are closer to your friends compared to your family.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides2" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You prefer book/movie endings that are of the open ended nature.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides3" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You like to spend your free time lounging around.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides4" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You like going outside when hanging out with friends.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides5" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>It’s more important for you to keep the peace than getting what you want.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides6" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>When you find something funny, you loudly express it.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides7" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>When you enter a party or social gathering, you tend to be the center of attention.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides8" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You thrive in learning new things.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides9" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>I have accomplished great things in my life.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides10" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You tend to put others' needs before your own.</h2>
         <hr>
-        <inputmin="0" max="10" type="range">
+        <input id="slides11" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You can make important decisions quickly.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides12" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You can make friends easily.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides13" id="slides13" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You know how and can easily manage your stress.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides14" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>Seeing other people cry can easily make you feel like you want to cry too.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides15" min="0" max="10" type="range">
         <br>
 
         <br>
         <h2>You feel comfortable walking up to strangers and striking up conversation.</h2>
         <hr>
-        <input min="0" max="10" type="range">
+        <input id="slides16" min="0" max="10" type="range">
         <br>
         <br>
         <br>
@@ -112,14 +116,153 @@
         <br>
 
         <form onSubmit="submitAction">
-            <input type="submit">
+            <button onclick="clickAction(event) ">Submit</button>
         </form>
 
         <script>
-            function clickAction() {
+            function clickAction(event) {
+                event.preventDefault();
+
+                var value1 = parseInt(document.getElementById("slides1").value);
+                var value2 = parseInt(document.getElementById("slides2").value);
+                var value3 = parseInt(document.getElementById("slides3").value);
+                var value4 = parseInt(document.getElementById("slides4").value);
+                var value5 = parseInt(document.getElementById("slides5").value);
+                var value6 = parseInt(document.getElementById("slides6").value);
+                var value7 = parseInt(document.getElementById("slides7").value);
+                var value8 = parseInt(document.getElementById("slides8").value);
+                var value9 = parseInt(document.getElementById("slides9").value);
+                var value10 = parseInt(document.getElementById("slides10").value);
+                var value11 = parseInt(document.getElementById("slides11").value);
+                var value12 = parseInt(document.getElementById("slides12").value);
+                var value13 = parseInt(document.getElementById("slides13").value);
+                var value14 = parseInt(document.getElementById("slides14").value);
+                var value15 = parseInt(document.getElementById("slides15").value);
+                var value16 = parseInt(document.getElementById("slides16").value);
+        
+                var result = value1 + value2 + value3 + value4 + value5 + value6 + value7 + value8 + value9 + value10 + value11 + value12 + value13 + value14 + value15 + value16;
+
+                alert(result);
+    
+            
+                var loyalist = 0;
+                var achiever = 0;
+                var helper = 0;
+                var enthusiast = 0;
+                var reformer = 0;
+                var challenger = 0;
+                var peacemaker = 0;
+                var individualist = 0;
                 
+
+                if (value1 <= 5) {
+                    individualist += 1;
+                } else if (value1 > 5) {
+                    enthusiast += 1;
+                }
+            
+                if (value2 <= 5) {
+                    individualist += 1;
+                } else if (value2 > 5) {
+                    challenger += 1;
+                }
+
+                if (value3 <= 5) {
+                    reformer += 1;
+                } else if (value3 > 5) {
+                    individualist += 1;
+                }
+
+                if (value4 <= 5) {
+                    achiever += 1;
+                } else if (value4 > 5) {
+                    peacemaker += 1;
+                }
+
+                if (value5 <= 5) {
+                    loyalist += 1;
+                } else if (value5 > 5) {
+                    enthusiast += 1;
+                }
+
+                if (value6 <= 5) {
+                    achiever += 1;
+                } else if (value6 > 5) {
+                    peacemaker += 1;
+                }
+
+                if (value7 <= 5) {
+                    reformer += 1;
+                } else if (value7 > 5) {
+                    loyalist += 1;
+                }
+
+                if (value8 <= 5) {
+                    individualist += 1;
+                } else if (value8 > 5) {
+                    enthusiast += 1;
+                }
+
+                if (value9 <= 5) {
+                    helper += 1;
+                } else if (value9 > 5) {
+                    achiever += 1;
+                }
+
+                if (value10 <= 5) {
+                    helper += 1;
+                } else if (value10 > 5) {
+                    achiever += 1;
+                }
+
+                if (value11 <= 5) {
+                    challenger += 1;
+                } else if (value11 > 5) {
+                    peacemaker += 1;
+                }
+
+                if (value12 <= 5) {
+                    challenger += 1;
+                } else if (value12 > 5) {
+                    loyalist += 1;
+                }
+
+                if (value13 <= 5) {
+                    reformer += 1;
+                } else if (value13 > 5) {
+                    enthusiast += 1;
+                }
+
+                if (value14 <= 5) {
+                    loyalist += 1;
+                } else if (value14 > 5) {
+                    reformer += 1;
+                }
+
+                if (value15 <= 5) {
+                    peacemaker += 1;
+                } else if (value15 > 5) {
+                    helper += 1;
+                }
+
+                if (value16 <= 5) {
+                    helper += 1;
+                } else if (value16 > 5) {
+                    challenger += 1;
+                }
+
+                console.log("Individualist: " + individualist);
+                console.log("Enthusiast: " + enthusiast);
+                console.log("Loyalist: " + loyalist);
+                console.log("Achiever: " + achiever);
+                console.log("Helper: " + helper);
+                console.log("Reformer: " + reformer);
+                console.log("Challenger: " + challenger);
+                console.log("Peacemaker: " + peacemaker);
             }
+
         </script>
     </section>
+
 </body>
 </html>
