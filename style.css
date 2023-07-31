@@ -1,0 +1,57 @@
+h1 {
+    font-family: 'Irish Grover', cursive;
+    font-size: 45px;
+    background-color: rgb(248, 211, 216);
+    border-style: solid; 
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body {
+    background-color: rgb(224, 247, 255);
+    border-style: solid;
+    border-radius: 15px;
+    margin: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#questions {
+    background-color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Irish Grover', cursive;
+    font-size: 20px;
+}
+
+hr {
+    border-color: black;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: rgb(238, 183, 183);
+}
+
+button {
+    font-family: 'Irish Grover', cursive;
+    font-size: 25px;
+    width: 150px;
+    border-radius: 15px;
+}
