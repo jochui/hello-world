@@ -6,6 +6,7 @@
     <title>Results</title>
     <link rel="stylesheet" href="enthusiaststyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <script src="enthusiast.js"></script>
 </head>
 <body>
     <h1>You are a
@@ -17,8 +18,22 @@
     <br>
     <br>
     At their best, Enthusiasts channel their talents toward worthy goals, cultivating appreciation, joy, and contentment. They inspire those around them to embrace life with enthusiasm and see each day as a chance for new discoveries and joyous moments.</P>
-    <img src="grinningcat.png" alt="blue striped grinning cat">
-    <img src="cathiking.jpg" alt="yawning cat"> 
-    <img src="catbiking.jpg" alt="cat biking">
+    <img src="grinningcat.png" 
+    width="500" 
+    height="400"
+    alt="blue striped grinning cat"
+    id="cat1" onclick="showone()" >
+    <img src="cathiking.jpg" 
+    width="500" 
+    height="400"
+    alt="yawning cat"
+    id="cat2" onclick="showtwo()" > 
+    <img src="catbiking.jpg" 
+    width="500" 
+    height="400"
+    alt="cat biking"
+    id="cat3" onclick="showthree()" >
+    <br> <br>
+    <span id="div"></span>
 </body>
 </html>
