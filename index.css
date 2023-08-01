@@ -12,7 +12,7 @@ h1 {
     right: 20%;
     top: -10px;
 
-    font-family: Kavoon ;
+    font-family: 'Irish Grover', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 120px;
@@ -28,8 +28,7 @@ h1 {
 }
 
 button {
-
-   font-family: Kavoon;
+    font-family: 'Irish Grover', cursive;
     font-size: 100px;
     text-align: center;
     background-color: #BCD5ED;
@@ -54,48 +53,46 @@ button {
     border: 12px solid #FFFFFF;
     box-shadow: 8px 8px 4px 1px #98AFD1;
     border-radius: 12px;
-
 }
 
 
 
-#cat1{
+#cat1 {
     position: absolute;
     left: 100px;
     right: 300px;
     top: 200px;
     bottom: 10px;
-    
 }
-#cat2{
+
+#cat2 {
     position: absolute;
     left: 1300px;
     right: 300px;
     top: 250px;
     bottom: 100px;
-    
 }
-#cat3{
+
+#cat3 {
     position: absolute;
     left: 120px;
     right: 300px;
     top: 500px;
     bottom: 100px;
-    
 }
-#cat4{
+
+#cat4 {
     position: absolute;
     left: 1100px;
     right: 300px;
     top: 800px;
     bottom: 100px;
-    
 }
-#cat5{
+
+#cat5 {
     position: absolute;
     left: 1100px;
     right: 300px;
     top: 600px;
     bottom: 100px;
-    
 }
